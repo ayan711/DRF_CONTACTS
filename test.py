@@ -1,3 +1,4 @@
+
 from pynput.keyboard import Key, Controller
 import time
 
@@ -61,11 +62,9 @@ while True :
         keyboard.press(i)
         keyboard.release(i)
         time.sleep(1)
+        # for test branch ----------------------------
+        # in master branch
 
         
 time.sleep(1)
-
-        # for test branch ----------------------------
-        # in master branch
         
-
