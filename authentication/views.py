@@ -41,9 +41,9 @@ class LoginView(GenericAPIView):
 
             serializer = UserSerializer(user)
 
-            data = {'user': serializer.data, 'token': auth_token}
+            data = {'user': serializer.data, 'token': auth_token,'success':True}
 
             return Response(data, status=status.HTTP_200_OK)
 
             # SEND RES
-        return Response({'detail': 'Invalid credentials' }, status=status.HTTP_401_UNAUTHORIZED)
+        return Response({'detail': 'Invalid credentials','success':False }, status=status.HTTP_401_UNAUTHORIZED)
