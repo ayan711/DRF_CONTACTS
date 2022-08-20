@@ -75,5 +75,5 @@ class ContactSearch(GenericAPIView):
             return Response(data, status=status.HTTP_200_OK)
 
             # SEND RES
-        return Response({'detail': 'Error','success':False }, status=status.HTTP_401_UNAUTHORIZED)
+        return Response({'detail': 'Valid token required','success':False }, status=status.HTTP_401_UNAUTHORIZED)
         
