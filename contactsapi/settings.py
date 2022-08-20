@@ -48,7 +48,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'authentication',
     'contacts',
-    'drf_yasg'
+    'drf_yasg',
+    'django_filters'
 ]
 
 SWAGGER_SETTINGS = {
